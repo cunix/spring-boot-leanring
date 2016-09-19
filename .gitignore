@@ -1,0 +1,8 @@
+# Byte-compiled / optimized / DLL files
+
+
+.classpath
+.project
+.mvn/
+.settings/*
+target/
