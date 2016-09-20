@@ -1,7 +1,14 @@
 package com.spring.springboot.model;
 
-public class User {
+import java.io.Serializable;
 
+import org.springframework.data.annotation.Id;
+
+public class User implements Serializable{
+
+
+	private static final long serialVersionUID = 1L;
+	@Id
 	private Integer id;
 	private Integer age;
 	private String name;
@@ -29,6 +36,16 @@ public class User {
 	}
 	public void setAge(Integer age) {
 		this.age = age;
+	}
+	public User() {
+		super();
+	}
+	public User(Integer id, Integer age, String name, String gender) {
+		super();
+		this.id = id;
+		this.age = age;
+		this.name = name;
+		this.gender = gender;
 	}
 	
 }
