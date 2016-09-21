@@ -30,20 +30,22 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<!-- 测试模块，包括JUnit、Hamcrest、Mockito -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 		<!-- 引入Web模块，需添加spring-boot-starter-web模块： -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<!-- Spring AOP -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 		<!-- thymeleaf 模板 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -53,7 +55,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
-
 		<!-- Swagger2 -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -65,8 +66,6 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.2.2</version>
 		</dependency>
-
-
 		<!-- JDBC -->
 		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-jdbc</artifactId> 
 			</dependency> <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
@@ -81,15 +80,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
-
-
+		<!-- Cache -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
-
-
-
 	</dependencies>
 
 	<build>

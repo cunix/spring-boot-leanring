@@ -7,11 +7,11 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.SerializationException;
 
 public class RedisObjectSerializer implements RedisSerializer<Object> {
-	
+
 	private Converter<Object, byte[]> serializer = new SerializingConverter();
-	
+
 	private Converter<byte[], Object> deserializer = new DeserializingConverter();
-	
+
 	static final byte[] EMPTY_ARRAY = new byte[0];
 
 	public Object deserialize(byte[] bytes) {
